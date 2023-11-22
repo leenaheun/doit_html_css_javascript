@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>연습문제 2</title>
+	<title>연습문제 2(완료)</title>
 	<style>	
 		#container {
 			width:200px;
@@ -13,7 +13,13 @@
       border:1px solid #ccc;
       border-radius:50%;      
       box-shadow: 5px 5px 30px 2px #000;
+	  animation: bearrotate 2.5s infinite;
     }
+	@keyframes bearrotate {
+		from{transform: perspective(200px) rotateY(0deg);}
+		50%{transform: perspective(200px) rotateY(180deg);}
+		to{transform: perspective(200px) rotateY(360deg);}
+	}
 	</style>
 </head>
 

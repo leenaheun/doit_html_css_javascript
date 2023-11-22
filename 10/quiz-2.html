@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>연습문제 2</title>  
+  <title>연습문제 2(완료/질문1)</title>  
   <style>
     * {
       box-sizing: border-box;
@@ -11,7 +11,7 @@
       margin:50px auto;
       padding:0;
       list-style:none;
-      width:610px;
+      width:605px;
       height:35px;
       box-shadow:0 3px 4px #8b8b8b;
       background-color:#dadada;
@@ -28,6 +28,18 @@
       width:100px;
       height:35px;
       line-height: 35px;
+    }
+    .top-menu li:last-child{
+      border-right:none;
+    }
+    .top-menu :last-child a:hover{
+      background-color: #b30000;
+      color:#fff;
+    }
+    .top-menu li:not(:nth-child(6)) a:hover{  /*ul:nth-child(6)하면 왜 6번째까지 적용될까?*/
+      background-color: #555;
+      color:#fff;
+
     }
     .top-menu li a:visited {
       color:black;
