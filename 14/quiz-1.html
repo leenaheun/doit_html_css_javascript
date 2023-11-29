@@ -3,13 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>연습문제 1</title>
+	<title>연습문제 1(완료/부가설명)</title>
 </head>
 <body>
 	<h2>4의 배수일까 아닐까</h2>
 
 	<script>
-	
+	 var four = parseInt(prompt("숫자를 입력하시요."));    /*parseInt로 숫자 검사하기*/
+	 if(four !== null){
+	 	if(four%4==0) {document.write(four+"은 4의 배수입니다.")}
+	 	else {document.write(four+"은 4의 배수가 아닙니다.")}
+	 }
+
+	 
 	</script>
 </body>
 </html>
